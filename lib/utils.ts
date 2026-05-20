@@ -12,6 +12,13 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export function assetPath(path: string) {
+  if (/^https?:\/\//.test(path)) return path;
+
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  return `${basePath}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 export function telHref(phone: string) {
   return `tel:${phone.replace(/[^\d+]/g, "")}`;
 }
@@ -28,4 +35,3 @@ export function whatsappHref(phone = mainPhone, text?: string) {
 export function routeHref() {
   return yandexMapsUrl;
 }
-

@@ -12,6 +12,7 @@ import {
   Star,
 } from "lucide-react";
 import {
+  assetPath,
   mainPhone,
   telHref,
   whatsappHref,
@@ -41,7 +42,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/generated/hero-engine-workshop.png"
+          src={assetPath("/images/generated/hero-engine-workshop.png")}
           alt="Тематический индустриальный визуал двигателя в мастерской"
           fill
           priority
@@ -124,7 +125,7 @@ export function Hero() {
           <div className="glass-panel overflow-hidden p-0">
             <div className="relative aspect-[16/10] min-h-[260px]">
               <Image
-                src="/images/generated/diagnostics-defect-inspection.png"
+                src={assetPath("/images/generated/diagnostics-defect-inspection.png")}
                 alt="Тематическое изображение дефектовки двигателя"
                 fill
                 sizes="(min-width: 1024px) 44vw, 100vw"

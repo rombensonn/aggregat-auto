@@ -40,6 +40,7 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: "true"
+          NEXT_PUBLIC_BASE_PATH: /aggregat-auto
           NEXT_PUBLIC_SITE_URL: https://rombensonn.github.io/aggregat-auto
 
       - name: Upload artifact

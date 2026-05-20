@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ClipboardCheck } from "lucide-react";
+import { assetPath } from "@/lib/utils";
 
 const steps = [
   {
@@ -44,7 +45,7 @@ export function ProcessSteps() {
           <div className="glass-panel mt-7 overflow-hidden">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/images/generated/diagnostics-defect-inspection.png"
+                src={assetPath("/images/generated/diagnostics-defect-inspection.png")}
                 alt="Тематический визуал дефектовки двигателя"
                 fill
                 sizes="(min-width: 1024px) 42vw, 100vw"

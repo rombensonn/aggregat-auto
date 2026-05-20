@@ -8,6 +8,7 @@ import {
   Truck,
   Wrench,
 } from "lucide-react";
+import { assetPath } from "@/lib/utils";
 
 const trustItems = [
   {
@@ -72,7 +73,7 @@ export function TrustBadges() {
             <div className="glass-panel mt-7 overflow-hidden">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/images/generated/machining-cylinder-head.png"
+                  src={assetPath("/images/generated/machining-cylinder-head.png")}
                   alt="Тематический индустриальный визуал фрезеровки ГБЦ"
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"
