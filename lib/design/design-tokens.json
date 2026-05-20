@@ -1,0 +1,28 @@
+{
+  "name": "Aggregat Auto Industrial Glass",
+  "colors": {
+    "obsidian": "#070B10",
+    "graphite": "#101820",
+    "panel": "#141E27",
+    "steel": "#7B8794",
+    "line": "rgba(209, 213, 219, 0.16)",
+    "text": "#F8FAFC",
+    "muted": "#A7B0BC",
+    "amber": "#F5A524",
+    "amberDark": "#C77800",
+    "cyanSteel": "#6FB7D8",
+    "paper": "#F4F6F8"
+  },
+  "radius": {
+    "card": "8px",
+    "button": "8px"
+  },
+  "shadow": {
+    "glass": "0 24px 80px rgba(0, 0, 0, 0.35)",
+    "amber": "0 18px 44px rgba(245, 165, 36, 0.24)"
+  },
+  "typography": {
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "letterSpacing": "0"
+  }
+}
